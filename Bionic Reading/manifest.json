@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Bionic Reading v0.2",
+    "description": "First Chrome extension",
+    "version": "1.0",
+    "action": {
+      "default_popup": "hello.html",
+      "default_icon": "hello_extensions.png"
+    },
+    "content_scripts": [
+        {
+          "js": ["scripts/content.js"],
+          "matches": [
+            "https://developer.chrome.com/docs/extensions/*",
+            "https://developer.chrome.com/docs/webstore/*",
+            "https://www.nytimes.com/*",
+            "https://www.techcrunch.com/*",
+            "https://www.theverge.com/*",
+            "https://arstechnica.com/*",
+            "https://future.com/*",
+            "https://venturebeat.com/*",
+            "https://dev.to/*",
+            "https://threadreaderapp.com/*"
+          ]
+        }
+    ]
+  }
